@@ -49,7 +49,7 @@ section {
 
 /* ------ HEADINGS ----- */
 
-h1, 
+h1,
 h2,
 h3 {
     font-weight: 300;
@@ -117,7 +117,7 @@ h3 {
     color: #16a085;
     font-size: 120%; /*A line height in percent of the current font size. */
     margin-right: 10px;
-    
+
     /*Tip to align text next to icon font*/
     line-height: 120%;
     vertical-align: middle;
@@ -126,7 +126,7 @@ h3 {
 
 /* ----- LINKS ----- */
 
-a:link, 
+a:link,
 a:visited {
     color: #16a085;
     text-decoration: none;
@@ -232,7 +232,7 @@ header {
     margin-left: 40px;
 }
 
-.main-nav li a:link, 
+.main-nav li a:link,
 .main-nav li a:visited {
     padding: 8px 0;
     color: #fff;
@@ -243,7 +243,7 @@ header {
     transition: border-bottom 0.2s;
 }
 
-.main-nav li a:hover, 
+.main-nav li a:hover,
 .main-nav li a:active {
     border-bottom: 2px solid #16a085;
 }
@@ -268,7 +268,7 @@ header {
     z-index: 9999;
 }
 
-.sticky .main-nav li a:link, 
+.sticky .main-nav li a:link,
 .sticky .main-nav li a:visited {
     padding: 18px 0;
     color: #555;
@@ -340,7 +340,7 @@ header {
 }
 
 .steps-box {
-    margin-top: 30px; 
+    margin-top: 30px;
 }
 
 .steps-box:first-child {
@@ -427,7 +427,7 @@ blockquote {
     font-style: italic;/*Italic style comes from the webfont css we imported in the html page.*/
     line-height: 145%;
     position: relative;/*This means all positioned elements inside of this element should be positioned relative to this element's location*/
-    margin-top: 40px; 
+    margin-top: 40px;
 }
 
 cite {
@@ -482,7 +482,7 @@ cite img {
 
 .plan-box div:last-child {
     text-align: center;
-    border: 0; 
+    border: 0;
 }
 
 .plan-price {
@@ -651,7 +651,7 @@ footer p {
 /* NOTES */
 /*------------------------------------------*/
 /*
->> background-size also accepts the cover keyword. The image is scaled to fit the entire container but, if that has a different aspect 
+>> background-size also accepts the cover keyword. The image is scaled to fit the entire container but, if that has a different aspect
 ratio, the image will be cropped. http://www.sitepoint.com/css3-background-size-property/
 
 
@@ -666,13 +666,11 @@ this. Specificity and inheritance. https://www.smashingmagazine.com/2010/04/css-
 
 
 >> Negative margins:
-When a static (not floated) element is given a negative margin on the top/left, it pulls the element in that specified direction. 
+When a static (not floated) element is given a negative margin on the top/left, it pulls the element in that specified direction.
 Example: #mydiv1 {margin-top:-10px;} moves the element 10px upwards.
 
 But, if you apply it to the bottom/right, it doesn’t move the element down/right as you might think. Instead, it pulls any succeeding
 element into the main element, overlapping it.
-
-More info here - https://www.smashingmagazine.com/2009/07/the-definitive-guide-to-using-negative-margins/
 
 
 */
