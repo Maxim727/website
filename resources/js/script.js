@@ -59,6 +59,10 @@ $('a[href*="#"]')
   });	
 
 
+/*
+Scroll animation on the page
+wp stands for waypoint    
+*/
 
 $('.js--wp-1').waypoint(function(direction) {
     $('.js--wp-1').addClass('animated fadeIn');
@@ -82,4 +86,26 @@ $('.js--wp-4').waypoint(function(direction) {
     $('.js--wp-4').addClass('animated fadeIn');
 }, {
     offset: '50%'
+});
+
+/*
+Mobile nav section
+*/
+
+$('.js--nav-icon').click(function() {
+    var nav = $('.js--main-nav');
+    var icon = $('.js--nav-icon i');
+    nav.slideToggle(200); 
+    
+    if(icon.hasClass('ion-navicon-round')) {
+        icon.addClass('ion-close-round');
+        icon.removeClass('ion-navicon-round');
+        
+        
+    } else {
+        icon.addClass('ion-navicon-round');
+        icon.removeClass('ion-close-round');
+        
+        
+    }
 });
