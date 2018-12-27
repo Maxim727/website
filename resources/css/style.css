@@ -289,21 +289,17 @@ header {
     color: #fff;
 }
 
-/*------------------------------------------*/
-/* FEATURES */
-/*------------------------------------------*/
-
 
 /*------------------------------------------*/
 /* ABOUT ME */
 /*------------------------------------------*/
 
-.section-features h3 {
+.section-profile h3 {
     font-size: 300%;
     text-align: left;
 }
 
-.section-features p {
+.section-profile p {
     font-size: 115%;
 }
 
@@ -318,7 +314,7 @@ header {
 
 .grades h3 {
     font-size: 120%;
-} 
+}
 
 
 .grades row,
@@ -326,7 +322,7 @@ header {
 .grades col span-1-of-2 box{
     height: 0px;
     overflow: hidden;
-    transition: all .5s linear;    
+    transition: all .5s linear;
 }
 
 .suka {
@@ -336,61 +332,14 @@ header {
 }
 
 
-
-
 /*------------------------------------------*/
-/* MEALS */
-/*------------------------------------------*/
-
-.section-meals {
-    padding: 0;
-}
-
-.meals-showcase {
-    list-style: none;
-    width: 100%;
-}
-
-.meals-showcase li {
-    display: block;
-    float: left;
-    width: 25%; /*4 li should occupy full width.*/
-}
-
-.meal-photo {
-    width: 100%;
-    margin: 0;
-    overflow: hidden; /*This is to prevent spilling out of images when we scale the images.*/
-    background: #000;
-}
-
-.meal-photo img {
-    opacity: 0.7;
-    width: 100%;
-    height: auto;/*This will scale the image in proportion to the 25% width set for meals-showcase-li*/
-    transform: scale(1.15); /*This is a part of our "animation" for food images.*/
-    transition: transform 0.5s, opacity 0.5s; /*animation - changing from this css setting to another will take some time*/
-}
-
-.meal-photo img:hover {
-    opacity: 1;
-    transform: scale(1.03); /*Not 1 because we want to cover some whitespace below each image.*/
-}
-
-/*------------------------------------------*/
-/* tech slider */
-/*------------------------------------------*/
-
-
-
-/*------------------------------------------*/
-/* HOW IT WORKS */
+/* HOW IT IS */
 /*------------------------------------------*/
 
 /*Adding a subtle color. It affects the "visual transition" from this section to the next one while scrolling down the page.*/
-.section-steps {
+.section-experience {
     background-color: #ebebeb;
-   
+
 }
 
 .steps-box {
@@ -450,62 +399,19 @@ header {
     list-style: none;
 }
 
-/*------------------------------------------*/
-/* CITIES */
-/*------------------------------------------*/
-
-.box img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 15px;
-}
-
-.city-feature {
-    margin-bottom: 5px;
-}
-
 
 
 /*------------------------------------------*/
-/* TESTIMONIALS */
+/* TESCHIE */
 /*------------------------------------------*/
 
-.section-testimonials {
+.section-technologies {
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(img/second.jpg);
     background-size: cover;
     color: #fff;
     background-attachment: fixed; /*When we scroll in the page, the image stays in the same place, relative to the browser window*/
 }
 
-blockquote {
-    padding: 2%;
-    font-style: italic;/*Italic style comes from the webfont css we imported in the html page.*/
-    line-height: 145%;
-    position: relative;/*This means all positioned elements inside of this element should be positioned relative to this element's location*/
-    margin-top: 40px;
-}
-
-cite {
-    font-size: 90%;
-    margin-top: 25px;
-    display: block;
-}
-
-blockquote:before {
-    content: "\201C";/*\201C is a glyph or symbol for left double quotes*/
-    font-size: 500%;
-    display: block; /*will display this :before pseudoelement on a new line.*/
-    position: absolute;/*This works only when 'blockquote' has position relative.*/
-    top: -5px;
-    left: -3px;
-}
-
-cite img {
-    height: 45px;
-    border-radius: 50%;
-    margin-right: 10px;
-    vertical-align: middle;
-}
 
 
 /*------------------------------------------*/
@@ -659,12 +565,12 @@ footer {
     color: #3b5998;
 }
 
-.ion-social-twitter:hover {
-    color: #55acee;
+.ion-social-github:hover {
+    color: #000000;
 }
 
-.ion-social-googleplus:hover {
-    color: #dd4b39;
+.ion-social-linkedin:hover {
+    color: #0075b5;
 }
 
 .ion-social-instagram:hover {
@@ -685,52 +591,13 @@ footer p {
 
 
 .js--wp-1,
-.js--wp-2,
 .js--wp-3,
 .js--wp-4{
     opacity: 0;
 }
 
 .js--wp-1 .animated,
-.js--wp-2 .animated,
 .js--wp-3 .animated,
 .js--wp-4 .animated{
     opacity: 1;
 }
-
-/*------------------------------------------*/
-/* waterfall */
-/*------------------------------------------*/
-/*
-
-
-
-
-
-/*------------------------------------------*/
-/* NOTES */
-/*------------------------------------------*/
-/*
->> background-size also accepts the cover keyword. The image is scaled to fit the entire container but, if that has a different aspect
-ratio, the image will be cropped. http://www.sitepoint.com/css3-background-size-property/
-
-
->> In the header, linear gradient acts like a second background image.
-
-
->> :link, :visited etc are pseudo class for html links. Note that the order of the CSS for links matters. Two key CSS concepts explain
-this. Specificity and inheritance. https://www.smashingmagazine.com/2010/04/css-specificity-and-inheritance/
-
-
->>> :first-child - This pseudo-class matches an element only if it's the first child element of its parent element. For instance, li:first-child matches the first list item in an ol or ul element. It doesn’t match the first child of a list item.
-
-
->> Negative margins:
-When a static (not floated) element is given a negative margin on the top/left, it pulls the element in that specified direction.
-Example: #mydiv1 {margin-top:-10px;} moves the element 10px upwards.
-
-But, if you apply it to the bottom/right, it doesn’t move the element down/right as you might think. Instead, it pulls any succeeding
-element into the main element, overlapping it.
-
-
-*/
