@@ -7,11 +7,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /*removes the blue border chrome browser puts around elements when you click or focus on them.*/
-*:focus {outline: none;}
+*:focus {
+    outline: none;
+}
 
 html,
-body{
+body {
     background-color: #fff;
     color: #555;
     font-family: 'Lato', 'Arial', sans-serif;
@@ -21,7 +24,10 @@ body{
     overflow-x: hidden;
 }
 
-.clearfix {zoom: 1}
+.clearfix {
+    zoom: 1
+}
+
 .clearfix:after {
     content: '.';
     clear: both;
@@ -38,9 +44,11 @@ body{
     max-width: 1140px;
     margin: 0 auto;
 }
+
 /*Adding whitespace between sections for clarity. Will use padding instead of margin for that because we will add some background later.*/
 section {
-    padding: 80px 0; /*top&bottom left&right*/
+    padding: 80px 0;
+    /*top&bottom left&right*/
 }
 
 .box {
@@ -60,7 +68,8 @@ h1 {
     margin-top: 0;
     margin-bottom: 20px;
     color: #fff;
-    font-size: 240%; /*We use percentage because this is responsive design*/
+    font-size: 240%;
+    /*We use percentage because this is responsive design*/
     word-spacing: 4px;
     letter-spacing: 1px;
 }
@@ -78,9 +87,11 @@ h2:after {
     display: block;
     height: 2px;
     background-color: #16a085;
-    content: " "; /*Important - We must specify the content of the :after pseudo element*/
+    content: " ";
+    /*Important - We must specify the content of the :after pseudo element*/
     width: 100px;
-    margin: 0 auto; /*To center the line horizontally*/
+    margin: 0 auto;
+    /*To center the line horizontally*/
     margin-top: 30px;
 }
 
@@ -88,12 +99,16 @@ h3 {
     font-size: 110%;
     margin-bottom: 15px;
 }
+
 /* ----- PARAGRAPHS ----- */
 /*Refer to the typography lesson*/
 .long-copy {
-    line-height: 145%; /*should be between 120% and 145%*/
-    width: 70%; /*With this, the text will not be centered anymore. Setting the margin will fix this.*/
-    margin-left: 15%; /*Will effectively center all the text*/
+    line-height: 145%;
+    /*should be between 120% and 145%*/
+    width: 70%;
+    /*With this, the text will not be centered anymore. Setting the margin will fix this.*/
+    margin-left: 15%;
+    /*Will effectively center all the text*/
 }
 
 .box p {
@@ -115,7 +130,8 @@ h3 {
     width: 30px;
     text-align: center;
     color: #16a085;
-    font-size: 120%; /*A line height in percent of the current font size. */
+    font-size: 120%;
+    /*A line height in percent of the current font size. */
     margin-right: 10px;
 
     /*Tip to align text next to icon font*/
@@ -147,7 +163,8 @@ a:active {
 .btn:link,
 .btn:visited,
 input[type=submit] {
-    display: inline-block;/*inline-block elements are like inline elements but they can have a width and height*/
+    display: inline-block;
+    /*inline-block elements are like inline elements but they can have a width and height*/
     padding: 10px 30px;
     font-weight: 300px;
     text-decoration: none;
@@ -199,24 +216,30 @@ input[type=submit] {
 header {
     /*linear gradient added to make heading text more legible*/
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/first-1.jpg);
-    background-size: cover;/*It is like zooming into the background image*/
+    background-size: cover;
+    /*It is like zooming into the background image*/
     background-position: center;
-    height: 100vh; /*100% of viewport*/
+    height: 100vh;
+    /*100% of viewport*/
     background-attachment: fixed;
 }
 
 .hero-text-box {
     position: absolute;
-    width: 1140px; /*Look at css for ".row"*/
-    top: 50%; /*Top and left are w.r.t the left edge of element. So, image will not be exactly centered*/
+    width: 1140px;
+    /*Look at css for ".row"*/
+    top: 50%;
+    /*Top and left are w.r.t the left edge of element. So, image will not be exactly centered*/
     left: 50%;
-    transform: translate(-50%, -50%); /*This moves the element by 50% of its width & height, thereby perfectly centering the box*/
+    transform: translate(-50%, -50%);
+    /*This moves the element by 50% of its width & height, thereby perfectly centering the box*/
 }
 
 .logo {
     height: 100px;
     width: auto;
-    float: left;/*Now, "content" below the img tag, can float around it.*/
+    float: left;
+    /*Now, "content" below the img tag, can float around it.*/
     margin-top: 20px;
 }
 
@@ -277,14 +300,14 @@ header {
 /* MOBILE STICKY NAVI */
 /*------------------------------------------*/
 
-.mobile-nav-icon{
+.mobile-nav-icon {
     float: right;
     margin-top: 30px;
     cursor: pointer;
     display: none;
 }
 
-.mobile-nav-icon i{
+.mobile-nav-icon i {
     font-size: 200%;
     color: #fff;
 }
@@ -304,9 +327,13 @@ header {
 }
 
 
+/*------------------------------------------*/
+/* GRADES */
+/*------------------------------------------*/
+
 
 .grades {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(img/school.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/school.jpeg);
     background-size: cover;
     color: #fff;
     background-attachment: fixed;
@@ -319,18 +346,25 @@ header {
 
 .grades row,
 .grades p,
-.grades col span-1-of-2 box{
+.grades ul
+.grades col span-1-of-2 box {
+    list-style: none;
     height: 0px;
     overflow: hidden;
     transition: all .5s linear;
+}
+.grades ul{
+    list-style: none;
 }
 
 .suka {
+    
     height: 0px;
     overflow: hidden;
     transition: all .5s linear;
 }
 
+.
 
 /*------------------------------------------*/
 /* HOW IT IS */
@@ -342,74 +376,23 @@ header {
 
 }
 
-.steps-box {
-    margin-top: 30px;
-}
-
-.steps-box:first-child {
-    text-align: right; /*Works for text, inline and inline-block elements.*/
-    padding-right: 3%;
-    margin-top: 30px;/*To align both the steps boxes better*/
-}
-
-.steps-box:last-child {
-    padding-left: 3%;
-    margin-top: 70px;/*To align both the steps boxes better*/
-}
-
-.app-screen {
-    width: 40%;
-}
-
-.works-step {
-    margin-bottom: 50px;
-}
-
-/*just a demo of last-of-type.*/
-.works-step:last-of-type {
-    margin-bottom: 80px;
-}
-
-.works-step div{
-    color: #16a085;
-    border: 2px solid #16a085;
-    display: inline-block; /*To ensure that the number(in div) can be beside the text and not cause a line break.*/
-    border-radius: 50%;
-    height: 55px;
-    width: 55px;
-    text-align: center;
-    padding: 5px;
-    float: left;
-    font-size: 150%;
-    margin-right: 25px;
-}
-
-.btn-app:link,
-.btn-app:visited {
-    border: 0;
-}
-
-.btn-app img {
-    height: 50px;
-    width: auto;
-    margin-right: 10px;
-}
-
-.section-steps ul {
+.section-experience ul{
     list-style: none;
 }
 
-
-
+.place {
+    margin: 10px 0;
+}
 /*------------------------------------------*/
-/* TESCHIE */
+/* TECH */
 /*------------------------------------------*/
 
 .section-technologies {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(img/second.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/second.jpg);
     background-size: cover;
     color: #fff;
-    background-attachment: fixed; /*When we scroll in the page, the image stays in the same place, relative to the browser window*/
+    background-attachment: fixed;
+    /*When we scroll in the page, the image stays in the same place, relative to the browser window*/
 }
 
 
@@ -426,7 +409,8 @@ header {
     background-color: #fff;
     border-radius: 5px;
     width: 90%;
-    margin-left: 5%; /*half of the 10% remaning width*/
+    margin-left: 5%;
+    /*half of the 10% remaning width*/
     box-shadow: 0 2px 2px #efefef;
 }
 
@@ -449,12 +433,14 @@ header {
 .plan-price {
     font-size: 300%;
     margin-bottom: 10px;
-    font-weight: 100;/*To make font less bold. Also, look at the imported fonts in the html file for this font weight. */
+    font-weight: 100;
+    /*To make font less bold. Also, look at the imported fonts in the html file for this font weight. */
     color: #e67e22;
 }
 
 .plan-price span {
-    font-size: 30%; /*30% of .plan-price font-size*/
+    font-size: 30%;
+    /*30% of .plan-price font-size*/
     font-weight: 300;
 }
 
@@ -481,24 +467,15 @@ header {
     margin: 0 auto;
 }
 
-input[type=text],
-input[type=email],
-select,
-textarea {
-    width: 100%;
-    padding: 7px;
-    border-radius: 3px;
-    border: 1px solid #ccc;
+.centered {
+    float: center;
+    text-align: left;
 }
 
-textarea {
-    height: 100px;
+.centered1 {
+    float: right;
+    text-align: left;
 }
-
-input[type=checkbox] {
-    margin: 10px 5px 10px 0;
-}
-
 
 /*------------------------------------------*/
 /* FOOTER */
@@ -517,7 +494,6 @@ footer {
 
 .social-links {
     list-style: none;
-    float: right;
 }
 
 .footer-nav li,
@@ -574,7 +550,7 @@ footer {
 }
 
 .ion-social-instagram:hover {
-    color: #125688;
+    color: #8a3ab9;
 }
 
 footer p {
@@ -584,7 +560,6 @@ footer p {
 }
 
 
-
 /*------------------------------------------*/
 /* ANIMATION */
 /*------------------------------------------*/
@@ -592,12 +567,12 @@ footer p {
 
 .js--wp-1,
 .js--wp-3,
-.js--wp-4{
+.js--wp-4 {
     opacity: 0;
 }
 
 .js--wp-1 .animated,
 .js--wp-3 .animated,
-.js--wp-4 .animated{
+.js--wp-4 .animated {
     opacity: 1;
 }
